@@ -1,0 +1,1042 @@
+
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: darkblue;
+    letter-spacing: 2px;
+}
+
+/* Navbar styling */
+nav {
+    flex-grow: 1; /* Makes the navbar take available space */
+    display: flex;
+    justify-content: center; /* Centers the navbar items horizontally */
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px; /* Increased font size for thicker appearance */
+    font-family: 'Arial', sans-serif;
+    font-weight: 600; /* Increased font weight for thickness */
+    color: darkblue;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 10px 15px; /* Increased padding for a thicker button look */
+    border-radius: 5px;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    color: white;
+    background-color: orange;
+    transform: scale(1.1); /* Slightly enlarges the item on hover */
+}
+
+
+body
+    {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fceee8;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .text-content {
+        max-width: 50%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        color: #29235c;
+        margin: 0 0 20px;
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: #555;
+        margin: 0 0 30px;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 20px;
+    }
+
+    .buttons a {
+        display: inline-block;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        color: #fff;
+        background-color: #f9a826;
+        transition: 0.3s;
+    }
+
+    .buttons a:hover {
+        background-color: #f08026;
+    }
+
+    .stats {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+    }
+    
+    .stats div {
+        text-align: center;
+    }
+    
+    .stats span {
+        font-size: 2rem;
+        font-weight: bold;
+        display: block;
+    }
+    
+    .stats .orange {
+        color: #fd9e01; /* Orange color for Courses */
+    }
+    
+    .stats .dark-blue {
+        color: #2c2e8a; /* Dark Blue color for Students Trained */
+    }
+    
+    .stats .dark-orange {
+        color: #d86d15; /* Dark Orange color for Professional Trainers */
+    }
+    
+    .stats p {
+        font-size: 1rem;
+        color: #333; /* Dark black color for text */
+        margin-top: 10px;
+    }
+    
+    
+
+    .image-content {
+        position: relative;
+        width: 45%;
+    }
+
+    .image-content img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #ffffff;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+
+    .badge span {
+        font-size: 1rem;
+        color: #00aa00;
+        display: block;
+    }
+
+    .badge p {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+    .class-info {
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        background: #ffffff;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        text-align: left;
+    }
+
+    .class-info h4 {
+        margin: 0 0 5px;
+        font-size: 1rem;
+        color: #29235c;
+    }
+
+    .class-info p {
+        margin: 0 0 10px;
+        font-size: 0.9rem;
+        color: #555;
+    }
+
+    .class-info a {
+        display: inline-block;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #f08026;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 0.9rem;
+    }
+
+    .class-info a:hover {
+        background-color: #f06006;
+    }
+
+    .trusted-section {
+        background-color: #ffffff;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .trusted-section h2 {
+        font-size: 1.8rem;
+        color: #29235c;
+        margin-bottom: 30px;
+    }
+
+    .trusted-logos {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+    
+    .trusted-logos img {
+        width: 100px; /* Fixed width */
+        height: 100px; /* Fixed height */
+        object-fit: contain; /* Adjust how the image fits within the box */
+        background-color: white; /* Optional: set a consistent background */
+        padding: 10px; /* Optional: add padding around images */
+        border-radius: 10px; /* Optional: add rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for style */
+    }
+    
+    .trusted-logos img:hover {
+        transform: scale(1.1);
+    }
+    
+
+    .vision-mission {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 40px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .vision-mission .card {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        flex: 1;
+        max-width: 400px;
+    }
+
+    .vision-mission .card h3 {
+        color: #29235c;
+        margin-bottom: 20px;
+    }
+
+    .vision-mission .card p {
+        color: #555;
+    }
+
+    .vision-mission .card img {
+        width: 50px;
+        margin-bottom: 20px;
+    }
+    .card:hover {
+        box-shadow: 0 0 15px rgba(255, 165, 0, 0.6);
+        transform: translateY(-10px);
+    }
+
+
+
+        .trusted-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .trusted-section h2 {
+            font-size: 24px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .trusted-logos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .trusted-logos img {
+            width: 100px;
+            transition: transform 0.3s ease;
+        }
+
+        .trusted-logos img:hover {
+            transform: scale(1.1);
+        }
+
+        .vision-mission {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .card:hover {
+            background-color: #ffa500;
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        
+
+        .why-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        .why-section h1 {
+            font-size: 55px;
+            margin: 0;
+        }
+
+        .why-section h1 .dark-blue {
+            color: #003366;
+        }
+
+        .why-section h1 .orange {
+            color: #ffa500;
+        }
+
+        .why-section .underline {
+            width: 150px;
+            height: 4px;
+            background-color: #ffa500;
+            margin: 10px auto 20px;
+        }
+
+        .why-cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .why-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .why-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .why-card p {
+            padding: 25px;
+            color: #555;
+            font-size: 16px;
+        }
+        .vision-mission, .why-section {
+            width: 100%; /* Ensure they take full width */
+            margin-bottom: 20px; /* Add spacing between sections */
+        }
+        .why-section-paragraph {
+            margin-top: 20px; /* Space above the paragraph */
+            font-size: 1.1rem; /* Adjust the font size */
+            color: #555; /* Set the text color */
+            line-height: 1.6; /* Improve readability */
+            max-width: 800px; /* Limit the width */
+            margin-left: auto;
+            margin-right: auto; /* Center the paragraph */
+        }
+
+        .why-card:hover {
+            transform: translateY(-10px); /* Lifts the card up */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adds a deeper shadow */
+        }
+
+        .why-card:hover p {
+            color: #ff6600; /* Changes text color on hover */
+        }
+
+        /* CATEGORIES Section */
+.categories-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.categories-section h2 {
+    font-size: 55px;
+    color: #29235c; /* Dark blue color */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.categories-section h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #ffa500; /* Orange color */
+    margin: 10px auto 0;
+}
+
+/* Container for the cards */
+.categories-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual cards */
+.categories-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+}
+
+/* Hover effect */
+.categories-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #ffa500; /* Orange background on hover */
+}
+
+/* Card text */
+.categories-card p {
+    font-size: 20px;
+    color: #29235c; /* Dark blue text */
+    margin: 0;
+}
+
+/* Styling for the first row (3 cards) */
+.categories-cards .categories-card:nth-child(1),
+.categories-cards .categories-card:nth-child(2),
+.categories-cards .categories-card:nth-child(3) {
+    flex: 1 1 calc(33.333% - 20px); /* 3 cards per row with gap */
+}
+
+/* Styling for the second row (2 cards) */
+.categories-cards .categories-card:nth-child(4),
+.categories-cards .categories-card:nth-child(5) {
+    flex: 1 1 calc(50% - 20px); /* 2 cards per row with gap */
+}
+
+/* Card image styling */
+.card-image {
+    width: 100%;
+    height: 250px; /* Adjust as needed */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+    border-radius: 8px 8px 0 0; /* Rounded corners on top */
+    margin-bottom: 10px; /* Space between the image and the text */
+}
+
+/* Modified hover effect */
+.categories-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #ffa500; /* Orange background on hover */
+}
+
+
+
+.identity-section {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.identity-section h2 {
+    font-size: 55px;
+    color: #003366;
+    text-align: center;
+}
+
+.identity-section h2 span {
+    color: #ffa500;
+}
+
+.identity-section p {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.identity-section .highlight {
+    color: #ffa500;
+    font-weight: bold;
+}
+
+.description {
+    margin-bottom: 40px;
+}
+
+.profile-and-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.profile-container {
+    flex: 2;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.profile-card {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-card .role {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-blue, .btn-red {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-blue {
+    background-color: #007bff;
+}
+
+.btn-red {
+    background-color: #ff4d4d;
+}
+
+.stats-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 24px;
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+/* Tools for Teachers Section */
+.tools-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .tools-content {
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  .tools-title {
+    font-size: 5.0rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .tools-title span {
+    display: inline-block;
+  }
+
+  .tools-title .tools-orange {
+    color: #fd9e01; /* Orange color for "Tools" */
+  }
+
+  .tools-title .tools-blue {
+    color: #2c2e8a; /* Dark blue color for "For Teachers And Learners" */
+  }
+
+  .tools-description {
+    font-size: 1.5rem;
+    color: #666;
+    line-height: 1.5;
+  }
+
+  .tools-image {
+    flex: 1;
+    text-align: right;
+  }
+
+  .tools-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+  }
+  .tools-image img:hover {
+    transform: scale(1.05) rotate(3deg); /* Slight rotation */
+    filter: brightness(1.1); /* Slightly brighten the image */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+/* Hover Effect for Tools Section Image */
+.tools-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.tools-image img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .tools-section {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .tools-content {
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+
+    .tools-image {
+      text-align: center;
+    }
+
+    .tools-image img {
+      max-width: 100%;
+    }
+  }
+
+
+  .testimonial-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .testimonial-content {
+    flex: 1;
+  }
+
+  /* Testimonial Title */
+  .testimonial-title {
+    font-size: 3.0rem;
+    color: #2c2e8a;
+    margin-bottom: 10px;
+  }
+
+  .testimonial-title small {
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #aaa;
+    letter-spacing: 1px;
+  }
+
+  .testimonial-description {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  /* Call-to-action Button */
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: 2px solid #fd9e01;
+    color: #fd9e01;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+    margin-top: 10px;
+  }
+
+  .cta-button:hover {
+    background-color: #fd9e01;
+    color: white;
+  }
+
+  /* Image Section */
+  .testimonial-image-wrapper {
+    flex: 1;
+    position: relative;
+  }
+
+  .testimonial-image-wrapper img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+
+  .testimonial-image-wrapper .testimonial-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: -20px;
+    left: 30px;
+    width: calc(100% - 60px);
+  }
+  /* Hover Effect for Testimonial Image */
+.testimonial-image-wrapper img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.testimonial-image-wrapper img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+
+  .testimonial-box p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #555;
+  }
+
+  .testimonial-box strong {
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .testimonial-box .stars {
+    color: #fd9e01;
+    margin-top: 10px;
+  }
+
+  .testimonial-box .review-source {
+    font-size: 0.8rem;
+    color: #999;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .testimonial-section {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .testimonial-image-wrapper {
+      margin-top: 20px;
+    }
+
+    .testimonial-image-wrapper .testimonial-box {
+      position: static;
+      margin: 20px auto 0;
+      width: 90%;
+    }
+  }
+
+
+  /*faq section*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+  }
+  
+  .faq-container {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow-y: auto;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .faq-item {
+    margin-bottom: 15px;
+  }
+  
+  .faq-question {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px;
+    text-align: left;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-question:hover {
+    background-color: #0056b3;
+  }
+  
+  .faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: #f1f1f1;
+    margin-top: 8px;
+    border-radius: 8px;
+    border-left: 4px solid #007bff;
+  }
+  
+  .faq-answer p {
+    margin: 0;
+  }
+
+/* FAQ Section */
+.faq-section {
+    margin-bottom: 0; /* Ensure no margin at the bottom */
+    padding-bottom: 0; /* Ensure no padding at the bottom */
+}
+
+/* Footer Section */
+.fixed-footer {
+    width: 200%; /* Increase width to 200% of the viewport */
+    height: 40vh; /* Set height for a rectangular appearance */
+    background-color: #f1f1f1; /* Light grey background */
+    position: relative; /* Position relative to the viewport */
+    margin-left: -25%; /* Move footer to the right by reducing the left margin */
+    margin-right: -25%; /* Add a margin on the right to balance the extra width */
+    margin-top: -500px; /* Reduce the top margin further */
+    padding-top: 0; /* Remove any top padding */
+    box-sizing: border-box; /* Include padding in width and height calculations */
+}
+
+
+/* Footer Section */
+footer {
+    background-color: #f1f1f1; /* Light grey background */
+    padding: 40px 20px;
+    color: #333;
+}
+
+/* Footer Main */
+.footer-main {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer-heading {
+    color: darkblue;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.footer-description {
+    font-size: 20px;
+    color: #666;
+}
+
+/* Footer Links Section (Category, Company, Contact Us) */
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-category, .footer-company, .footer-contact {
+    width: 30%;
+}
+
+.footer-category h3, .footer-company h3, .footer-contact h3 {
+    color: darkblue;
+    margin-bottom: 10px;
+}
+
+.footer-category ul, .footer-company ul, .footer-contact ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-category li, .footer-company li, .footer-contact li {
+    font-size: 20px;
+    margin-bottom: 10px;
+    transition: color 0.3s, transform 0.3s; /* Added smooth transitions */
+}
+
+/* Hover effect for category and company list items */
+.footer-category li:hover, .footer-company li:hover {
+    color: orange; /* Change text color to orange */
+    transform: scale(1.05); /* Slightly enlarge the text */
+}
+
+/* Footer Contact Section */
+.footer-category li i, .footer-company li i, .footer-contact li i {
+    margin-right: 10px;
+    color: darkorange; /* Icon color */
+}
+
+/* Footer Social Media Section */
+.footer-social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-social-media a {
+    font-size: 24px;
+    color: darkblue;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.footer-social-media a:hover {
+    color: orange;
+}
+
+/* Footer Mobile Responsiveness */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-category, .footer-company, .footer-contact {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    
+    .footer-social-media {
+        margin-top: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

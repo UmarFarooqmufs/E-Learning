@@ -1,0 +1,512 @@
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: darkblue;
+    letter-spacing: 2px;
+}
+
+/* Navbar styling */
+nav {
+    flex-grow: 1; /* Makes the navbar take available space */
+    display: flex;
+    justify-content: center; /* Centers the navbar items horizontally */
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px; /* Increased font size for thicker appearance */
+    font-family: 'Arial', sans-serif;
+    font-weight: 600; /* Increased font weight for thickness */
+    color: darkblue;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 10px 15px; /* Increased padding for a thicker button look */
+    border-radius: 5px;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    color: white;
+    background-color: orange;
+    transform: scale(1.1); /* Slightly enlarges the item on hover */
+}
+
+
+
+/*pricing table*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff5f0;
+    color: #333;
+    text-align: center;
+  }
+
+  h1 {
+    color: #ff8000;
+    font-size: 4rem; /* Increased font size */
+    margin: 40px 0;
+  }
+
+  .pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Adjusted spacing between cards */
+    padding: 40px;
+  }
+
+  .pricing-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px; /* Increased padding */
+    width: 350px; /* Increased card width */
+    text-align: left;
+  }
+
+  .pricing-card h2 {
+    font-size: 1.8rem;
+    color: #ff8000;
+  }
+
+  .pricing-card h3 {
+    font-size: 2.5rem; /* Increased price font size */
+    margin: 15px 0;
+    color: #333;
+  }
+
+  .pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  .pricing-card ul li {
+    margin: 12px 0;
+    font-size: 1.1rem; /* Slightly larger font for list items */
+  }
+
+  .pricing-card ul li::before {
+    content: "✔️";
+    color: #ff8000;
+    margin-right: 10px;
+  }
+
+  .pricing-card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem; /* Increased button font size */
+    color: #fff;
+    cursor: pointer;
+    background: #ff8000;
+    transition: background 0.3s;
+  }
+
+  .pricing-card button:hover {
+    background: #e67600;
+  }
+
+  .pricing-card:nth-child(2) {
+    border: 2px solid #ff8000;
+  }
+
+  .badge {
+    font-size: 1rem; /* Increased badge font size */
+    background: #ffeccc;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+
+  
+/* online coaching */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.online-coaching-section {
+    background-color: #fff; /* White background for the section */
+    padding: 40px 20px;
+}
+
+.coaching-container {
+    background-color: #003366; /* Dark blue background */
+    color: #fff !important; /* Ensure text color is white */
+    padding: 40px 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.coaching-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff !important; /* Ensure text color is white */
+}
+
+.coaching-paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #fff !important; /* Ensure text color is white */
+}
+
+.start-learning-button {
+    background-color: #e63946; /* Red color for the button */
+    color: white !important; /* Ensure button text color is white */
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.start-learning-button:hover {
+    background-color: #d62828; /* Darker red on hover */
+}
+
+
+
+/*our students say */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+
+  .students-section {
+    background-color: #e0f7ff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .students-section h1 {
+    font-size: 3.5rem; /* Larger heading size */
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+
+  .carousel-container {
+    position: relative;
+    background-color: #fdf5e6;
+    margin: 0 auto;
+    padding: 40px; /* Increased padding for larger spacing */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 95%; /* Increased width */
+    max-width: 1600px; /* Fit wider screens better */
+    overflow: hidden;
+  }
+
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+  }
+
+  .carousel-card {
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+  }
+
+  .carousel-card img {
+    width: 100%;
+    height: 220px; /* Larger height */
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .carousel-card h2 {
+    font-size: 1.7rem; /* Larger font size for headings */
+    margin: 20px 0 10px;
+    color: #000;
+  }
+
+  .carousel-card p {
+    font-size: 1.2rem; /* Slightly larger description */
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .carousel-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Spacing from the carousel */
+  }
+
+  .carousel-button {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 60px; /* Larger button size */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 0 10px;
+  }
+
+  .carousel-button:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .carousel-button svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-card {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    .carousel-card img {
+      height: 180px;
+    }
+
+    .carousel-button {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .carousel-card {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .carousel-card img {
+      height: 150px;
+    }
+  }
+  /*app available section*/
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+
+  .app-available-section {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .app-container {
+    background-color: #002b5c; /* Dark Blue Color */
+    padding: 40px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .app-container h1 {
+    font-size: 2.5rem; /* Adjusted heading size */
+    color: #ffffff; /* White Text Color */
+    font-weight: bold;
+    margin: 0;
+    margin-right: 20px;
+    flex: 1 1 50%; /* Adjusts for responsiveness */
+    text-align: left;
+  }
+
+  .app-buttons {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+  }
+
+  .app-button {
+    background-color: #ffffff; /* White Background */
+    color: #002b5c; /* Dark Blue Text */
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between text and icon */
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none; /* Removes underline for anchor links */
+  }
+
+  .app-button:hover {
+    background-color: #002b5c;
+    color: #ffffff;
+  }
+
+  .app-button i {
+    font-size: 1.5rem; /* Adjust icon size */
+  }
+
+  @media (max-width: 768px) {
+    .app-container h1 {
+      font-size: 2rem; /* Smaller heading size */
+      margin-bottom: 20px; /* Adds space below heading */
+      text-align: center;
+    }
+
+    .app-buttons {
+      justify-content: center;
+    }
+  }
+
+  /* Footer Section */
+footer {
+    background-color: #f1f1f1; /* Light grey background */
+    padding: 40px 20px;
+    color: #333;
+}
+
+/* Footer Main */
+.footer-main {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer-heading {
+    color: darkblue;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.footer-description {
+    font-size: 20px;
+    color: #666;
+}
+
+/* Footer Links Section (Category, Company, Contact Us) */
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-category, .footer-company, .footer-contact {
+    width: 30%;
+}
+
+.footer-category h3, .footer-company h3, .footer-contact h3 {
+    color: darkblue;
+    margin-bottom: 10px;
+}
+
+.footer-category ul, .footer-company ul, .footer-contact ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-category li, .footer-company li, .footer-contact li {
+    font-size: 20px;
+    margin-bottom: 10px;
+    transition: color 0.3s, transform 0.3s; /* Added smooth transitions */
+}
+
+/* Hover effect for category and company list items */
+.footer-category li:hover, .footer-company li:hover {
+    color: orange; /* Change text color to orange */
+    transform: scale(1.05); /* Slightly enlarge the text */
+}
+
+/* Footer Contact Section */
+.footer-category li i, .footer-company li i, .footer-contact li i {
+    margin-right: 10px;
+    color: darkorange; /* Icon color */
+}
+
+/* Footer Social Media Section */
+.footer-social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-social-media a {
+    font-size: 24px;
+    color: darkblue;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.footer-social-media a:hover {
+    color: orange;
+}
+
+/* Footer Mobile Responsiveness */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-category, .footer-company, .footer-contact {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    
+    .footer-social-media {
+        margin-top: 30px;
+    }
+}
+
+
+
